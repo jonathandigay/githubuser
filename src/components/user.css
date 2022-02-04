@@ -1,0 +1,69 @@
+.user {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .user {
+    display: block;
+  }
+}
+.user .personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user .personal-info .img {
+  background: black;
+  overflow: hidden;
+  width: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  background: rgba(128, 128, 128, 0.2);
+  box-shadow: 0 2px 3px 2px gray;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.user .personal-info .name {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.user .gth-info {
+  flex: 1;
+  padding: 5px 15px;
+  height: 100%;
+
+  margin: 0 5px;
+}
+.user .gth-info .infos .info {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+.user .gth-info button {
+  margin: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 5px 15px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background: #000000;
+  box-shadow: 0 2px 3px 2px gray;
+  color: white;
+  letter-spacing: 1px;
+}
+.user .gth-info button a {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
